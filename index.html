@@ -1,11 +1,10 @@
 <!DOCTYPE html>
-<html lang="ja">
 <head>
 <meta charset="utf-8" />
 <meta http-equiv="content-language" content="ja">
-<title>MOTHER  / EarthBound Zero Maps (leaflet.js)</title>
-<link rel="stylesheet" href="http://shimz.me/libs/leaflet-0.7.3/leaflet.css" />
-<script src="http://shimz.me/libs/leaflet-0.7.3/leaflet-src.js"></script>
+<title>Black Desert World Map</title>
+<link rel="stylesheet" href="https://rawgithubusercontent.com/yacamochi/yacamochi.github.io/master/Leaflet.css" />
+<script src="https://rawgithubusercontent.com/yacamochi/yacamochi.github.io/master/leaflet-src.js"></script>
 <script type="text/javascript" src="L.TileLayer.Zoomify.js"></script>  
 <style>
 html, body {
@@ -28,11 +27,11 @@ html, body {
 <script>
 var map = L.map('map').setView(new L.LatLng(0,0), 0);
 
-L.tileLayer.zoomify('mother_map/', { //タイル画像フォルダを指定
-    width: 16384,
-    height: 14336,
+L.tileLayer.zoomify('IMG/', { //タイル画像フォルダを指定
+    width: 13246,
+    height: 6720,
     tolerance: 0,
-    attribution: 'Image: <a href="http://starmen.net/mother1/miscinfo/">starmen.net</a>'
+    attribution: '<a href="http://chimolog.blogspot.jp/">Chimolog</a>'
 }).addTo(map);
 
 
