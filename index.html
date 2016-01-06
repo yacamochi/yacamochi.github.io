@@ -3,8 +3,8 @@
 <meta charset="utf-8" />
 <meta http-equiv="content-language" content="ja">
 <title>Black Desert World Map</title>
-<link rel="stylesheet" href="https://raw.githubusercontent.com/yacamochi/yacamochi.github.io/master/Leaflet.css" />
-<script src="https://raw.githubusercontent.com/yacamochi/yacamochi.github.io/master/leaflet-src.js"></script>
+<link rel="stylesheet" href="https://rawgithub.com/yacamochi/yacamochi.github.io/master/Leaflet.css" />
+<script src="https://rawgithub.com/yacamochi/yacamochi.github.io/master/leaflet-src.js"></script>
 <script type="text/javascript" src="L.TileLayer.Zoomify.js"></script>  
 <style>
 html, body {
@@ -26,17 +26,13 @@ html, body {
 
 <script>
 var map = L.map('map').setView(new L.LatLng(0,0), 0);
-
 L.tileLayer.zoomify('IMG/', { //タイル画像フォルダを指定
     width: 13246,
     height: 6720,
     tolerance: 0,
     attribution: '<a href="http://chimolog.blogspot.jp/">Chimolog</a>'
 }).addTo(map);
-
-
 map.setView(new L.LatLng(74.56673621013677, -117.18017578125));
-
 </script>
 </body>
 </html>
